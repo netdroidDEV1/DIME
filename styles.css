@@ -1,0 +1,270 @@
+body {
+  background-color: #ffffff !important; 
+}
+
+/* Top Banner */
+.top-banner {
+  font-size: 14px;
+  background-color: #ffffff !important; 
+  color: #ffffff;
+}
+
+/* Header */
+.header .logo-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header .info-section {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-item p {
+  margin: 0;
+  color: #23634e; /* Color verde para las letras */
+}
+
+/* Navbar */
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar .nav-link:hover {
+  background-color: #006f34;
+  border-radius: 5px;
+}
+
+
+/* Carousel */
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer p {
+  margin: 0;
+}
+
+
+/* Footer Logo */
+.footer-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjustments for Info Section */
+.info-item {
+  max-width: 300px; /* Tamaño máximo para mantener consistencia */
+  flex: 1 1 100%; /* Asegura que ocupen el 100% del ancho en pantallas pequeñas */
+  text-align: center; /* Centra los elementos */
+}
+
+.info-item i {
+  font-size: 2rem; /* Tamaño inicial del ícono */
+}
+
+.info-item p {
+  margin: 0;
+}
+
+.footer-logos h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el cursor */
+  opacity: 0.8; /* Reduce un poco la opacidad */
+}
+
+/* Header Info Section Updates */
+.header .info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Asegura una distribución uniforme */
+  align-items: center;
+  gap: 20px; /* Espaciado entre las tarjetas */
+}
+
+
+
+
+
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.text-primary {
+  color: #2980b9 !important;
+}
+
+
+.navbar .navbar-brand {
+  font-size: 1.2rem; /* Controla el tamaño de la marca */
+}
+.whatsapp {
+  position: fixed;
+  width: 80px; /* Aumenta el tamaño del botón */
+  height: 80px; /* Aumenta el tamaño del botón */
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: #FFF;
+  border-radius: 50%; /* Hace que el botón sea circular */
+  text-align: center;
+  font-size: 40px; /* Aumenta el tamaño del icono */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Añade sombra para destacar el botón */
+  transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+.whatsapp:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.whatsapp-icon {
+  margin-top: 20px; /* Ajusta el icono para centrarlo verticalmente */
+}
+
+
+.custom-width {
+  width: 60%; /* Ajusta el porcentaje según tus necesidades */
+  max-width: 66px; /* Opcional: establece un ancho máximo */
+}
+
+
+
+/* Contenedor del carrusel: CENTRADO en la pantalla */
+.hero-carousel-container {
+  display: flex;
+  justify-content: center;  /* Centrado horizontal */
+  align-items: center;      /* Centrado vertical */
+  height: 100vh;            /* Ocupa toda la pantalla */
+  width: 100%;
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-img {
+  width: 100%;
+  max-width: 1200px; /* Controla el tamaño máximo en pantallas grandes */
+  height: 60vh;      /* Ocupa 60% de la altura de la pantalla */
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  border-radius: 10px; /* Bordes redondeados para un diseño moderno */
+}
+
+/* Estilos Responsive */
+@media (max-width: 1024px) {
+  .carousel-img {
+      height: 50vh; /* Ajuste para tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+      height: 40vh; /* Ajuste para móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-img {
+      height: 35vh; /* Ajuste en teléfonos pequeños */
+  }
+}
+
+/* Estilos para el encabezado */
+.header {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
+}
+
+/* Borde animado */
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #006f34;
+  background: linear-gradient(90deg, 
+      rgba(40, 167, 69, 1) 0%, 
+      rgba(25, 135, 84, 1) 50%, 
+      rgba(40, 167, 69, 1) 100%);
+  animation: borderAnimation 3s ease-in-out infinite;
+}
+
+@keyframes borderAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+      font-size: 1.75rem;
+  }
+  
+  .header {
+      padding: 1.5rem 0;
+  }
+}
+
+.img-especial {
+  max-width: none; /* Permite superar su tamaño original */
+  transform-origin: center; /* Mantiene la expansión equilibrada */
+}
+
+/* 📌 Para pantallas grandes (PC) */
+@media (min-width: 1200px) {
+  .img-especial {
+      transform: scaleX(1.5); /* Expande más en pantallas grandes */
+  }
+}
+
+/* 📌 Para tablets */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .img-especial {
+      transform: scaleX(1.5); /* Menos expansión en tablets */
+  }
+}
+
+/* 📌 Para móviles */
+@media (max-width: 767px) {
+  .img-especial {
+      transform: scaleX(1.2); /* Se expande menos en móviles */
+      width: 110vw; /* Un poco más de ancho en móviles */
+  }
+}
